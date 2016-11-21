@@ -27,6 +27,8 @@ This project provides the opportunity to focus on this core knowledge so working
 The exercises to reinforce conceptual knowledge emphasize the importance of knowing how to make solid DB design decisions. Being able to write SQL queries is an important skill, but being able to design a schema that minimizes redundancy and maximizes reliable and painless access to data will pay dividends.
 ## Specifications
 
+### Required
+- [ ] The artifact produced is properly licensed, preferably with the [MIT license](https://opensource.org/licenses/MIT).
 **SQL Foundations**
 - [ ] Work through the exercises on [SQLBolt](https://sqlbolt.com/)
 - [ ] Work through the exercises under the "Tutorials: Learn SQL in stages" section on [SQLZOO](http://sqlzoo.net/)
@@ -38,12 +40,12 @@ The exercises to reinforce conceptual knowledge emphasize the importance of know
 - [ ] Complete 10 [Relational Algebra challenges](https://www.hackerrank.com/domains/databases/relational-algebra/difficulty/all/page/1) on HackerRank
 - [ ] Complete 5 [Database Normalization challenges](https://www.hackerrank.com/domains/databases/database-normalization/difficulty/all/page/1) on HackerRank
 
-### Required
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license](https://opensource.org/licenses/MIT).
+
 ## Quality Rubric
-- Successful completion of SQLBolt exercises
-- Successful completion of SQLZOO exercises
-- All tests pass for LeetCode and HackerRank submissions
+- [ ] Completion of SQLBolt exercises with an understanding of the incorrect ones
+- [ ] Completion of SQLZoo exercises with an understanding of the incorrect ones
+- [ ] All tests pass for LeetCode and HackerRank submissions
+
 ## Helpful resources
 
 [18+ Best Online Resources for Learning SQL and Database Concepts](http://www.vertabelo.com/blog/notes-from-the-lab/18-best-online-resources-for-learning-sql-and-database)
