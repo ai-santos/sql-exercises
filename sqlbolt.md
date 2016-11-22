@@ -2,8 +2,8 @@
 
 #Table of Contents
 [Main Page](https://github.com/lumodon/pastoral-rhea/blob/master/README.md)<br><br>
-[QUERIES with Constraints](#SQL Lesson 2: Queries with constraints (Pt. 1))<br>
-[SELECT from WORLD Tutorial](#select-from-world-tutorial)<br>
+[QUERIES with Constraints](#queries-with-constraints)<br>
+[SQL REVIEW: SIMPLE SELECT QUERIES](#sql-review)<br>
 [SELECT from Nobel Tutorial](#select-from-nobel-tutorial)<br>
 [SELECT within SELECT Tutorial](#select-within-select-tutorial)<br>
 [SUM and COUNT](#sum-and-count)<br>
@@ -24,28 +24,12 @@ SELECT population FROM world
   WHERE name = 'Germany'
 ```
 
-* Checking a list The word IN allows us to check if an item is in a list. The example shows the name and population for the countries 'Luxembourg', 'Mauritius' and 'Samoa'.
-Show the name and the population for 'Ireland', 'Iceland' and 'Denmark'.
-
-```
-SELECT name, population FROM world
-  WHERE name IN ('Ireland', 'Iceland', 'Denmark')
-```
-
-* Which countries are not too small and not too big? BETWEEN allows range checking (range specified is inclusive of boundary values). The example below shows countries with an area of 250,000-300,000 sq. km.
-Modify it to show the country and the area for countries with an area between 200,000 and 250,000.
-
-```
-SELECT name, area FROM world
-  WHERE area BETWEEN 200000 AND 250000
-```
-
-## SELECT from WORLD Tutorial
+## SQL Review
 [Back to Table of Contents](#table-of-contents)
-* Read the notes about this table. Observe the result of running a simple SQL command.
+* List all the Canadian cities and their populations
 
 ```
-SELECT name, continent, population FROM world
+SELECT city, population FROM north_american_cities WHERE country='Canada'; 
 ```
 
 * How to use WHERE to filter records. Show the name for the countries that have a population of at least 200 million. 200 million is 200000000, there are eight zeros.
