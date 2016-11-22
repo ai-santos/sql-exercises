@@ -2,7 +2,7 @@
 
 #Table of Contents
 [Main Page](https://github.com/lumodon/pastoral-rhea/blob/master/README.md)<br><br>
-[Questries with Constraints](#SQL Lesson 2: Queries with constraints (Pt. 1))<br>
+[Queries with Constraints](#SQL Lesson 2: Queries with constraints (Pt. 1))<br>
 [SELECT from WORLD Tutorial](#select-from-world-tutorial)<br>
 [SELECT from Nobel Tutorial](#select-from-nobel-tutorial)<br>
 [SELECT within SELECT Tutorial](#select-within-select-tutorial)<br>
