@@ -13,7 +13,7 @@
 [More JOIN operations](#more-join-operations)<br>
 [Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
 
-## Queries with Constraints
+## QUERIES with Constraints
 [Back to Table of Contents](#table-of-contents)
 
 * The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
