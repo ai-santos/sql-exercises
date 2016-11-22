@@ -13,9 +13,8 @@
 [More JOIN operations](#more-join-operations)<br>
 [Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
 
-## SELECT Basics
+## Queries with Constraints
 [Back to Table of Contents](#table-of-contents)
-* Using table (world) from: http://sqlzoo.net/wiki/SELECT_basics
 
 * The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
 Modify it to show the population of Germany
