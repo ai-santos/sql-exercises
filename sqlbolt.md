@@ -1,4 +1,4 @@
-##SQL ZOO 
+##SQL BOLT
 
 #Table of Contents
 [Main Page](https://github.com/lumodon/pastoral-rhea/blob/master/README.md)<br><br>
