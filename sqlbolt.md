@@ -141,23 +141,22 @@ SELECT DISTINCT building_name, role FROM buildings
 [Back to Table of Contents](#table-of-contents)
 * Using table (world) from: http://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial
 
-* List each country name where the population is larger than that of 'Russia'.
+* Find the name and role of all employees who have not been assigned to a building 
 
 ```
-SELECT name FROM world
-  WHERE population >
-     (SELECT population FROM world
-      WHERE name='Russia')
+SELECT name, role FROM employees
+WHERE building IS NULL;
 ```
 
-* Show the countries in Europe with a per capita GDP greater than 'United Kingdom'.
-Per Capita GDP
+* Find the names of the buildings that hold no employees 
+
 
 ```
-SELECT name FROM world  
-WHERE continent = 'Europe' AND GDP/population > 
-(SELECT GDP/population FROM world
-WHERE name = 'United Kingdom')
+SELECT DISTINCT building_name
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
 ```
 
 * List the name and continent of countries in the continents containing either Argentina or Australia. Order by name of the country.
