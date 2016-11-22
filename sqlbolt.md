@@ -6,7 +6,7 @@
 [SQL REVIEW: SIMPLE SELECT QUERIES](#sql-review)<br>
 [SQL Outer Joins](#sql-outer-joins)<br>
 [SQL Nulls](#sql-nulls)<br>
-[SUM and COUNT](#sum-and-count)<br>
+[SQL Queries with Expressions](#sql-queries-expressions)<br>
 [The JOIN operation](#the-join-operation)<br>
 [Self JOIN](#self-join)<br>
 [Using NULL](#using-null)<br>
@@ -158,3 +158,22 @@ FROM buildings
 WHERE role IS NULL;
 ```
 
+## SQL Queries with Expressions
+[Back to Table of Contents](#table-of-contents)
+
+* Find the name and role of all employees who have not been assigned to a building 
+
+```
+SELECT name, role FROM employees
+WHERE building IS NULL;
+```
+
+* Find the names of the buildings that hold no employees 
+
+```
+SELECT DISTINCT building_name
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
+```
