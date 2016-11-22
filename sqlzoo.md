@@ -266,3 +266,30 @@ WHERE yr=1980 AND subject NOT IN ('Chemistry', 'Medicine')
 SELECT * FROM nobel
 WHERE (subject='Medicine' AND yr<1910) OR (subject='Literature' AND yr>=2004)
 ```
+* Find all details of the prize won by PETER GRÜNBERG
+Non-ASCII characters
+
+```
+SELECT * FROM nobel WHERE winner LIKE 'Peter grÜnberg'
+```
+* Find all details of the prize won by EUGENE O'NEILL
+
+```
+SELECT * FROM nobel WHERE winner = "EUGENE O'NEILL"
+```
+* Knights in order
+List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
+
+```
+SELECT winner, yr, subject FROM nobel WHERE winner LIKE 'Sir %' ORDER BY yr DESC, winner
+```
+* The expression subject IN ('Chemistry','Physics') can be used as a value - it will be 0 or 1.
+Show the 1984 winners and subject ordered by subject and winner name; but list Chemistry and Physics last.
+
+```
+SELECT winner, subject
+  FROM nobel
+ WHERE yr=1984
+ ORDER BY subject IN ('Physics','Chemistry') ASC, subject, winner
+```
+
