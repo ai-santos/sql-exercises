@@ -38,17 +38,21 @@ SELECT city, population FROM north_american_cities WHERE country='Canada';
 SELECT city, latitude FROM north_american_cities WHERE country='United States' ORDER BY latitude DESC; 
 ```
 
-* Give the name and the per capita GDP for those countries with a population of at least 200 million.
-HELP:How to calculate per capita GDP
+* List all cities west of Chicago, ordered from west to east
 
 ```
-SELECT name, gdp/population FROM world WHERE population>200000000  
+SELECT city, longitude FROM north_american_cities
+WHERE longitude < -87.629798
+ORDER BY longitude ASC;
 ```
 
-* Show the name and population in millions for the countries of the continent 'South America'. Divide the population by 1000000 to get population in millions.
+* List the 2 largest cities in Mexico
 
 ```
-SELECT name, population/1000000 FROM world WHERE continent='South America'
+SELECT city, population FROM north_american_cities
+WHERE country LIKE "Mexico"
+ORDER BY population DESC
+LIMIT 2;
 ```
 
 * Show the name and population for France, Germany, Italy
