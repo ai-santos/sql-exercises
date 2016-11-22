@@ -6,7 +6,7 @@
 [SQL REVIEW: SIMPLE SELECT QUERIES](#sql-review)<br>
 [SQL Outer Joins](#sql-outer-joins)<br>
 [SQL Nulls](#sql-nulls)<br>
-[SQL Queries with Expressions](#sql-queries-expressions)<br>
+[SQL Queries with Expressions](#sql-queries-with-expressions)<br>
 [The JOIN operation](#the-join-operation)<br>
 [Self JOIN](#self-join)<br>
 [Using NULL](#using-null)<br>
