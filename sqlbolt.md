@@ -32,11 +32,10 @@ SELECT population FROM world
 SELECT city, population FROM north_american_cities WHERE country='Canada'; 
 ```
 
-* How to use WHERE to filter records. Show the name for the countries that have a population of at least 200 million. 200 million is 200000000, there are eight zeros.
+* Order all the cities in the United States by their latitude from north to south 
 
 ```
-SELECT name FROM world
-WHERE population>200000000
+SELECT city, latitude FROM north_american_cities WHERE country='United States' ORDER BY latitude DESC; 
 ```
 
 * Give the name and the per capita GDP for those countries with a population of at least 200 million.
