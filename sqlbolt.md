@@ -55,10 +55,10 @@ ORDER BY population DESC
 LIMIT 2;
 ```
 
-* Show the name and population for France, Germany, Italy
+* List the third and fourth largest cities (by population) in the United States and their population 
 
 ```
-SELECT name, population FROM world WHERE name IN ('France', 'Germany', 'Italy') 
+SELECT city, population FROM north_american_cities WHERE country='United States' ORDER BY population DESC LIMIT 2 OFFSET 2;
 ```
 
 * Show the countries which have a name that includes the word 'United'
