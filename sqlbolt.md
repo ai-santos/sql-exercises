@@ -5,7 +5,7 @@
 [QUERIES with Constraints](#queries-with-constraints)<br>
 [SQL REVIEW: SIMPLE SELECT QUERIES](#sql-review)<br>
 [SQL Outer Joins](#sql-outer-joins)<br>
-[SQL Short Outer Nulls](#sql-nulls)<br>
+[SQL Nulls](#sql-nulls)<br>
 [SUM and COUNT](#sum-and-count)<br>
 [The JOIN operation](#the-join-operation)<br>
 [Self JOIN](#self-join)<br>
