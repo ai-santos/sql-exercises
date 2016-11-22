@@ -161,19 +161,28 @@ WHERE role IS NULL;
 ## SQL Queries with Expressions
 [Back to Table of Contents](#table-of-contents)
 
-* Find the name and role of all employees who have not been assigned to a building 
+* List all movies and their combined sales in millions of dollars 
 
 ```
-SELECT name, role FROM employees
-WHERE building IS NULL;
+SELECT title, (domestic_sales + international_sales) / 1000000 AS gross_sales_millions
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
 ```
 
-* Find the names of the buildings that hold no employees 
+* List all movies and their ratings in percent
 
 ```
-SELECT DISTINCT building_name
-FROM buildings 
-  LEFT JOIN employees
-    ON building_name = building
-WHERE role IS NULL;
+SELECT title, rating * 10 AS ratings_percent
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+```
+
+* List all movies that were released on even number years
+
+```
+SELECT title, year
+FROM movies
+WHERE year % 2 = 0;
 ```
