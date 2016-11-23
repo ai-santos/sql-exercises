@@ -42,8 +42,8 @@ The exercises to reinforce conceptual knowledge emphasize the importance of know
 
 
 ## Quality Rubric
-- [ ] Completion of SQLBolt exercises with an understanding of the incorrect ones
-- [ ] Completion of SQLZoo exercises with an understanding of the incorrect ones
+- [X] Completion of SQLBolt exercises with an understanding of the incorrect ones
+- [X] Completion of SQLZoo exercises with an understanding of the incorrect ones
 - [ ] All tests pass for LeetCode and HackerRank submissions
 
 ## Helpful resources
