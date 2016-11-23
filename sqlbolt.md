@@ -11,7 +11,7 @@
 [SQL Queries with Aggregates Part 2](#sql-queries-with-aggregates-part2)<br>
 [SQL Order of execution of a Query](#sql-order-of-execution-of-a-query)<br>
 [SQL Inserting Rows](#sql-inserting-rows)<br>
-[Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
+[SQL Updating Rows](#sql-updating-rows)<br>
 
 ## QUERIES with Constraints
 [Back to Table of Contents](#table-of-contents)
@@ -268,4 +268,31 @@ VALUES (4, 'Toy Story 4', 'John Lasseter', 2016, 92);
 INSERT INTO boxoffice
 (movie_id, rating, domestic_sales, international_sales)
 VALUES (4, 8.7, 340000000, 270000000);
+```
+
+## SQL Updating Rows
+[Back to Table of Contents](#table-of-contents)
+
+* The director for A Bug's Life is incorrect, it was actually directed by John Lasseter 
+
+```
+UPDATE movies
+SET director = "John Lasseter "
+WHERE id=2;
+```
+
+* The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+
+```
+UPDATE movies
+SET year = 1999
+WHERE id = 4;
+```
+
+* Both the title and directory for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+```
+UPDATE movies
+SET title = "Toy Story 3", director = "Lee Unkrich"
+WHERE id = 11;
 ```
