@@ -422,3 +422,24 @@ SELECT COUNT(name) FROM world WHERE area >= 1000000;
 SELECT SUM(population) FROM world WHERE name IN('France', 'Germany', 'Spain'); 
 ```
 
+* For each continent show the continent and number of countries.
+
+```
+SELECT continent, COUNT(name) FROM world GROUP BY continent;
+```
+
+* For each continent show the continent and number of countries with populations of at least 10 million.
+
+```
+SELECT DISTINCT continent, COUNT(name) continent 
+FROM world WHERE population > 10000000 
+GROUP BY continent;
+```
+
+* List the continents that have a total population of at least 100 million.
+
+```
+SELECT DISTINCT continent 
+FROM world GROUP BY continent 
+HAVING SUM(population)>=100000000
+```
