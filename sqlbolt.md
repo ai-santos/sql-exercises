@@ -7,8 +7,8 @@
 [SQL Outer Joins](#sql-outer-joins)<br>
 [SQL Nulls](#sql-nulls)<br>
 [SQL Queries with Expressions](#sql-queries-with-expressions)<br>
-[SQL Queries with Aggregates](#sql-queries-with-aggregates)<br>
-[Self JOIN](#self-join)<br>
+[SQL Queries with Aggregates Part 1](#sql-queries-with-aggregates-part1)<br>
+[SQL Queries with Aggregates Part 2](#sql-queries-with-aggregates-part2)<br>
 [Using NULL](#using-null)<br>
 [More JOIN operations](#more-join-operations)<br>
 [Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
@@ -187,11 +187,47 @@ FROM movies
 WHERE year % 2 = 0;
 ```
 
-## SQL Queries with Aggregates
+## SQL Queries with Aggregates Part 1
 [Back to Table of Contents](#table-of-contents)
 
 * Find the longest time that an employee has been at the studio
 
 ```
 SELECT MAX(years_employed) AS longest_time FROM employees;
+```
+
+* For each role, find the average number of years employed by employees in that role
+
+```
+SELECT AVG(years_employed), role FROM employees GROUP BY role;
+```
+
+* Find the total number of employee years worked in each building
+
+```
+SELECT SUM(years_employed), building FROM employees GROUP BY building;
+```
+
+## SQL Queries with Aggregates Part 2
+[Back to Table of Contents](#table-of-contents)
+
+* Find the number of Artists in the studio (without a HAVING clause)
+
+```
+SELECT COUNT(role) FROM employees WHERE role='Artist';
+```
+
+* Find the number of Employees of each role in the studio
+
+```
+SELECT role, name AS number_employees_per_role FROM employees;
+```
+
+* Find the total number of years employed by all Engineers
+
+```
+SELECT role, SUM(years_employed)
+FROM employees
+GROUP BY role
+HAVING role = "Engineer";
 ```
