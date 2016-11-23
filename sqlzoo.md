@@ -387,3 +387,38 @@ WHERE population IS NOT NULL AND population =
 ALL(SELECT population FROM world y 
 WHERE x.continent = y.continent AND x.population < 3 * y.population )
 ```
+
+## SUM and COUNT
+[Back to Table of Contents](#table-of-contents)
+
+* Show the total population of the world.
+
+```
+SELECT SUM(population)
+FROM world;
+```
+
+* List all the continents - just once each.
+
+```
+SELECT DISTINCT(continent) FROM world;
+```
+
+* Give the total GDP of Africa
+
+```
+SELECT SUM(gdp) FROM world WHERE continent='Africa';
+```
+
+* How many countries have an area of at least 1000000
+
+```
+SELECT COUNT(name) FROM world WHERE area >= 1000000;
+```
+
+* What is the total population of ('France','Germany','Spain')
+
+```
+SELECT SUM(population) FROM world WHERE name IN('France', 'Germany', 'Spain'); 
+```
+
