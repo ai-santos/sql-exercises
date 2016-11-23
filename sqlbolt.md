@@ -14,6 +14,7 @@
 [SQL Updating Rows](#sql-updating-rows)<br>
 [SQL Deleting Rows](#sql-deleting-rows)<br>
 [SQL Creating Tables](#sql-creating-tables)<br>
+[SQL Altering Tables](#sql-altering-tables)<br>
 
 
 ## QUERIES with Constraints
@@ -330,4 +331,23 @@ CREATE TABLE Database (
     version INTEGER,
     download_count INTEGER
 );
+```
+
+## SQL Altering Tables
+[Back to Table of Contents](#table-of-contents)
+
+* Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in. 
+
+```
+ALTER TABLE movies
+ADD aspect_ratio  
+    DEFAULT FLOAT ;
+```
+
+* Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English
+
+```
+ALTER TABLE movies
+ADD language  
+    DEFAULT English ;
 ```
