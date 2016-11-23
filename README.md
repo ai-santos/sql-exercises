@@ -34,7 +34,7 @@ The exercises to reinforce conceptual knowledge emphasize the importance of know
 - [X] Work through the exercises under the "Tutorials: Learn SQL in stages" section on [SQLZOO](http://sqlzoo.net/)
 
 **SQL Foundations Practice Exercises**
-- [ ] Complete 10 TOTAL "Easy" and "Medium" level [database challenges](https://leetcode.com/problemset/database/) on LeetCode. Prerequisite knowledge: the **SQL Foundations** specifications listed above.
+- [X] Complete 10 TOTAL "Easy" and "Medium" level [database challenges](https://leetcode.com/problemset/database/) on LeetCode. Prerequisite knowledge: the **SQL Foundations** specifications listed above.
 
 **Bonus** (if you finish these exercises and want more)
 - [ ] Complete 10 [Relational Algebra challenges](https://www.hackerrank.com/domains/databases/relational-algebra/difficulty/all/page/1) on HackerRank
@@ -44,7 +44,7 @@ The exercises to reinforce conceptual knowledge emphasize the importance of know
 ## Quality Rubric
 - [X] Completion of SQLBolt exercises with an understanding of the incorrect ones
 - [X] Completion of SQLZoo exercises with an understanding of the incorrect ones
-- [ ] All tests pass for LeetCode and HackerRank submissions
+- [X] All tests pass for LeetCode and HackerRank submissions
 
 ## Helpful resources
 
