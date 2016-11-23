@@ -9,8 +9,8 @@
 [SQL Queries with Expressions](#sql-queries-with-expressions)<br>
 [SQL Queries with Aggregates Part 1](#sql-queries-with-aggregates-part1)<br>
 [SQL Queries with Aggregates Part 2](#sql-queries-with-aggregates-part2)<br>
-[Using NULL](#using-null)<br>
-[More JOIN operations](#more-join-operations)<br>
+[SQL Order of execution of a Query](#sql-order-of-execution-of-a-query)<br>
+[SQL Inserting Rows](#sql-inserting-rows)<br>
 [Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
 
 ## QUERIES with Constraints
@@ -230,4 +230,42 @@ SELECT role, SUM(years_employed)
 FROM employees
 GROUP BY role
 HAVING role = "Engineer";
+```
+
+## SQL Order of execution of a Query
+[Back to Table of Contents](#table-of-contents)
+
+* Find the number of movies each director has directed
+
+```
+SELECT COUNT(title), director FROM movies GROUP BY director;
+```
+
+* Find the total domestic and international sales that can be attributed to each director
+
+```
+SELECT director, SUM(domestic_sales + international_sales) as Cumulative_sales_from_all_movies
+FROM movies
+    INNER JOIN boxoffice
+        ON movies.id = boxoffice.movie_id
+GROUP BY director;
+```
+
+## SQL Inserting Rows
+[Back to Table of Contents](#table-of-contents)
+
+* Add the studio's new production of Toy Story 4
+
+```
+INSERT INTO movies
+(id, title, director, year, length_minutes)
+VALUES (4, 'Toy Story 4', 'John Lasseter', 2016, 92);
+```
+
+* Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the new record to the box office table.
+
+```
+INSERT INTO boxoffice
+(movie_id, rating, domestic_sales, international_sales)
+VALUES (4, 8.7, 340000000, 270000000);
 ```
