@@ -13,6 +13,8 @@
 [SQL Inserting Rows](#sql-inserting-rows)<br>
 [SQL Updating Rows](#sql-updating-rows)<br>
 [SQL Deleting Rows](#sql-deleting-rows)<br>
+[SQL Creating Tables](#sql-creating-tables)<br>
+
 
 ## QUERIES with Constraints
 [Back to Table of Contents](#table-of-contents)
@@ -311,4 +313,21 @@ DELETE FROM movies WHERE year < 2005;
 
 ```
 DELETE FROM movies WHERE director='Andrew Stanton';
+```
+
+## SQL Creating Tables
+[Back to Table of Contents](#table-of-contents)
+
+* Create a new table named Database with the following columns:
+– Name A string (text) describing the name of the database
+– Version A number (floating point) of the latest version of this database
+– Download_count An integer count of the number of times this database was downloaded
+This table has no constraints. 
+
+```
+CREATE TABLE Database (
+    name TEXT,
+    version INTEGER,
+    download_count INTEGER
+);
 ```
