@@ -7,7 +7,7 @@
 [SQL Outer Joins](#sql-outer-joins)<br>
 [SQL Nulls](#sql-nulls)<br>
 [SQL Queries with Expressions](#sql-queries-with-expressions)<br>
-[The JOIN operation](#the-join-operation)<br>
+[SQL Queries with Aggregates](#sql-queries-with-aggregates)<br>
 [Self JOIN](#self-join)<br>
 [Using NULL](#using-null)<br>
 [More JOIN operations](#more-join-operations)<br>
@@ -185,4 +185,13 @@ FROM movies
 SELECT title, year
 FROM movies
 WHERE year % 2 = 0;
+```
+
+## SQL Queries with Aggregates
+[Back to Table of Contents](#table-of-contents)
+
+* Find the longest time that an employee has been at the studio
+
+```
+SELECT MAX(years_employed) AS longest_time FROM employees;
 ```
