@@ -12,6 +12,7 @@
 [SQL Order of execution of a Query](#sql-order-of-execution-of-a-query)<br>
 [SQL Inserting Rows](#sql-inserting-rows)<br>
 [SQL Updating Rows](#sql-updating-rows)<br>
+[SQL Deleting Rows](#sql-deleting-rows)<br>
 
 ## QUERIES with Constraints
 [Back to Table of Contents](#table-of-contents)
@@ -295,4 +296,19 @@ WHERE id = 4;
 UPDATE movies
 SET title = "Toy Story 3", director = "Lee Unkrich"
 WHERE id = 11;
+```
+
+## SQL Deleting Rows
+[Back to Table of Contents](#table-of-contents)
+
+* This database is getting too big, lets remove all movies that were released before 2005.
+
+```
+DELETE FROM movies WHERE year < 2005;
+```
+
+* Andrew Stanton has also left the studio, so please remove all movies directed by him
+
+```
+DELETE FROM movies WHERE director='Andrew Stanton';
 ```
