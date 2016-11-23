@@ -578,3 +578,76 @@ team2, SUM(CASE WHEN teamid=team2 THEN 1 ELSE 0 END) score2
 FROM game LEFT OUTER JOIN goal ON matchid = id
 GROUP BY mdate, matchid, team1, team2
 ```
+
+## MORE JOIN Operations
+[Back to Table of Contents](#table-of-contents)
+
+* List the films where the yr is 1962 [Show id, title]
+
+```
+SELECT id, title
+ FROM movie
+ WHERE yr=1962
+```
+
+* Give year of 'Citizen Kane'.
+
+ ```
+ SELECT yr
+ FROM movie
+ WHERE title='Citizen Kane'
+ ```
+
+* List all of the Star Trek movies, include the id, title and yr (all of these movies include the words Star Trek in the title). Order results by year.
+
+```
+SELECT id, title, yr
+FROM movie
+WHERE title LIKE 'Star Trek%'
+```
+
+* What are the titles of the films with id 11768, 11955, 21191
+
+```
+SELECT title
+FROM movie
+WHERE id IN(11768, 11955, 21191)
+```
+
+* What id number does the actress 'Glenn Close' have?
+
+```
+SELECT id FROM actor WHERE name = 'Glenn Close'
+```
+
+* What is the id of the film 'Casablanca'
+
+```
+SELECT id FROM movie WHERE title='Casablanca'
+```
+
+* Obtain the cast list for 'Casablanca'.
+what is a cast list?
+Use movieid=11768, this is the value that you obtained in the previous question.
+
+```
+SELECT name FROM actor
+JOIN casting ON casting.actorid = actor.id
+JOIN movie ON casting.movieid = movie.id
+WHERE movie.id = 11768
+```
+
+* Obtain the cast list for the film 'Alien'
+
+```
+SELECT name FROM actor
+JOIN casting ON casting.actorid = actor.id
+JOIN movie ON casting.movieid = movie.id
+WHERE movie.title='Alien'
+```
+
+* List the films in which 'Harrison Ford' has appeared
+
+```
+
+```
