@@ -523,7 +523,7 @@ SELECT DISTINCT player
 
 ```
 SELECT teamname, COUNT(*)
-  FROM eteam JOIN goal ON id=teamid
+FROM eteam JOIN goal ON id=teamid
 GROUP BY teamname
 ORDER BY COUNT(*) DESC
 ```
@@ -539,9 +539,10 @@ ORDER BY stadium
 
 * For every match involving 'POL', show the matchid, date and the number of goals scored.
 
-```SELECT matchid,mdate, COUNT(player) 
-  FROM game JOIN goal ON matchid = id 
- WHERE (team1 = 'POL' OR team2 = 'POL') 
+```
+SELECT matchid,mdate, COUNT(player) 
+FROM game JOIN goal ON matchid = id 
+WHERE (team1 = 'POL' OR team2 = 'POL') 
 GROUP BY matchid, mdate
 Submit SQLRestore default
 ```
@@ -550,8 +551,8 @@ Submit SQLRestore default
 
 ```
 SELECT matchid,mdate, COUNT(player) 
-  FROM game JOIN goal ON matchid = id 
- WHERE (team1 = 'POL' OR team2 = 'POL') 
+FROM game JOIN goal ON matchid = id 
+WHERE (team1 = 'POL' OR team2 = 'POL') 
 GROUP BY matchid, mdate
 ```
 
@@ -568,7 +569,7 @@ GROUP BY matchid, mdate
 
 ```
 SELECT mdate, team1,
- SUM(CASE WHEN teamid=team1 THEN 1 ELSE 0 END) score1, 
+SUM(CASE WHEN teamid=team1 THEN 1 ELSE 0 END) score1, 
 team2, SUM(CASE WHEN teamid=team2 THEN 1 ELSE 0 END) score2  
 FROM game LEFT OUTER JOIN goal ON matchid = id
 GROUP BY mdate, matchid, team1, team2
