@@ -512,11 +512,6 @@ WHERE matchid = id AND stadium = 'National Stadium, Warsaw';
 ```
 
 * The example query shows all goals scored in the Germany-Greece quarterfinal.
-Instead show the name of all players who scored a goal against Germany.
-HINT
-Select goals scored only by non-German players in matches where GER was the id of either team1 or team2.
-You can use teamid!='GER' to prevent listing German players.
-You can use DISTINCT to stop players being listed twice.
 
 ```
 SELECT DISTINCT player
