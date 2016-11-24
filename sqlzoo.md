@@ -645,5 +645,33 @@ WHERE movie.title='Alien'
 * List the films in which 'Harrison Ford' has appeared
 
 ```
+SELECT title FROM movie
+JOIN casting ON casting.movieid=movie.id
+JOIN actor ON actor.id=casting.actorid 
+WHERE actor.name='Harrison Ford'
+```
+
+* List the films where 'Harrison Ford' has appeared - but not in the starring role. 
+
+```
+SELECT title FROM movie
+JOIN casting ON casting.movieid=movie.id
+JOIN actor ON actor.id=casting.actorid 
+WHERE actor.name='Harrison Ford' AND ord != 1
+```
+
+* List the films together with the leading star for all 1962 films.
+
+```
+SELECT title, name FROM movie
+JOIN casting ON casting.movieid=movie.id
+JOIN actor ON actor.id=casting.actorid
+WHERE ord=1 AND yr=1962
+LIMIT 50
+```
+
+* Which were the busiest years for 'John Travolta', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
+
+```
 
 ```
