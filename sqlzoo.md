@@ -1,7 +1,7 @@
 ##SQL ZOO 
 
 #Table of Contents
-[Main Page](https://github.com/lumodon/pastoral-rhea/blob/master/README.md)<br><br>
+[Main Page](https://github.com/asantos3026/lisa-aileen-sql/blob/master/sqlzoo.md)<br><br>
 [SELECT Basics](#select-basics)<br>
 [SELECT from WORLD Tutorial](#select-from-world-tutorial)<br>
 [SELECT from Nobel Tutorial](#select-from-nobel-tutorial)<br>
