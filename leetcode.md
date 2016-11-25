@@ -15,7 +15,7 @@ Leet Code Database Challenges
 ## Combine Two Tables
 [Back to Table of Contents](#table-of-contents)
 
-[Imgur](http://i.imgur.com/Y9AsIfj.png)
+[Combine 2 Tables](http://i.imgur.com/Y9AsIfj.png)
 
 
 ```
