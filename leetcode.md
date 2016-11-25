@@ -1,6 +1,7 @@
-Table of Contents
+Leet Code Database Challenges
+
 [Main Page](https://github.com/asantos3026/lisa-aileen-sql/blob/master/README.md)<br><br>
-[SELECT Basics](#select-basics)<br>
+[Combine Two Tables](#combine-two-tables)<br>
 [SELECT from WORLD Tutorial](#select-from-world-tutorial)<br>
 [SELECT from Nobel Tutorial](#select-from-nobel-tutorial)<br>
 [SELECT within SELECT Tutorial](#select-within-select-tutorial)<br>
@@ -11,16 +12,15 @@ Table of Contents
 [More JOIN operations](#more-join-operations)<br>
 [Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
 
-## SELECT Basics
+## Combine Two Tables
 [Back to Table of Contents](#table-of-contents)
-* Using table (world) from: http://sqlzoo.net/wiki/SELECT_basics
 
-* The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
-Modify it to show the population of Germany
+[Imgur](http://i.imgur.com/Y9AsIfj.png)
+
 
 ```
-SELECT population FROM world
-    WHERE name = 'Germany'
+SELECT FirstName, LastName, City, State FROM Person
+LEFT JOIN Address ON Address.personid=Person.personid;
 ```
 
 * Checking a list The word IN allows us to check if an item is in a list. The example shows the name and population for the countries 'Luxembourg', 'Mauritius' and 'Samoa'.
