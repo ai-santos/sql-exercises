@@ -1,4 +1,5 @@
 Leet Code Database Challenges
+#Table of Contents
 
 [Main Page](https://github.com/asantos3026/lisa-aileen-sql/blob/master/README.md)<br><br>
 [Combine Two Tables](#combine-two-tables)<br>
