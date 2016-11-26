@@ -5,7 +5,7 @@ Leet Code Database Challenges
 [Second Highest Salary](#second-highest-salary)<br>
 [Nth Highest Salary](#nth-highest-salary)<br>
 [Rank Scores](#rank-scores)<br>
-[SUM and COUNT](#sum-and-count)<br>
+[Consecutive Numbers](#consecutive-numbers)<br>
 [The JOIN operation](#the-join-operation)<br>
 [Self JOIN](#self-join)<br>
 [Using NULL](#using-null)<br>
