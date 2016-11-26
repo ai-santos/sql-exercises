@@ -2,8 +2,8 @@ Leet Code Database Challenges
 
 [Main Page](https://github.com/asantos3026/lisa-aileen-sql/blob/master/README.md)<br><br>
 [Combine Two Tables](#combine-two-tables)<br>
-[SELECT from WORLD Tutorial](#select-from-world-tutorial)<br>
-[SELECT from Nobel Tutorial](#select-from-nobel-tutorial)<br>
+[Second Highest Salary](#second-highest-salary)<br>
+[Nth Highest Salary](#nth-highest-salary)<br>
 [SELECT within SELECT Tutorial](#select-within-select-tutorial)<br>
 [SUM and COUNT](#sum-and-count)<br>
 [The JOIN operation](#the-join-operation)<br>
@@ -23,15 +23,20 @@ SELECT FirstName, LastName, City, State FROM Person
 LEFT JOIN Address ON Address.personid=Person.personid;
 ```
 
-* Checking a list The word IN allows us to check if an item is in a list. The example shows the name and population for the countries 'Luxembourg', 'Mauritius' and 'Samoa'.
-Show the name and the population for 'Ireland', 'Iceland' and 'Denmark'.
+## Second Highest Salary
+[Back to Table of Contents](#table-of-contents)
+
+[Second Highest Salary](http://i.imgur.com/x2DGGfN.png)
 
 ```
-SELECT name, population FROM world
-    WHERE name IN ('Ireland','Iceland','Denmark');
+SELECT MAX(Salary) AS SecondHighestSalary FROM Employee 
+    WHERE Salary < ALL(SELECT MAX(Salary) FROM Employee);
 ```
 
-* Which countries are not too small and not too big? BETWEEN allows range checking (range specified is inclusive of boundary values). The example below shows countries with an area of 250,000-300,000 sq. km. Modify it to show the country and the area for countries with an area between 200,000 and 250,000.
+## Nth Highest Salary
+[Back to Table of Contents](#table-of-contents)
+
+[Nth Highest Salary](http://i.imgur.com/7Zdr9xO.png)
 
 ```
 SELECT name, area FROM world
