@@ -147,7 +147,10 @@ SELECT id, title
 
 ## Trips Users
 [Back to Table of Contents](#table-of-contents)
-* Which were the busiest years for 'John Travolta', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
+
+[Trips and Users Part 1](http://i.imgur.com/y7yt9Cp.png)
+[Trips and Users Part 2](http://i.imgur.com/Z8Qxdgg.png)
+
 ```
 SELECT yr,COUNT(title) FROM
   movie JOIN casting ON movie.id=movieid
