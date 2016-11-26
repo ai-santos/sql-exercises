@@ -79,9 +79,8 @@ SELECT name, GDP/population FROM world WHERE population > 200000000
 
 ## Duplicate Emails
 [Back to Table of Contents](#table-of-contents)
-* Using table (nobel) from: http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial
 
-* Change the query shown so that it displays Nobel prizes for 1950.
+[Duplicate Emails](http://i.imgur.com/KjWmY9n.png)
 
 ```
 SELECT yr, subject, winner
@@ -91,9 +90,9 @@ SELECT yr, subject, winner
 
 ## Customers Who Never Order
 [Back to Table of Contents](#table-of-contents)
-* Using table (world) from: http://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial
 
-* List each country name where the population is larger than that of 'Russia'.
+
+[Customers Who Never Order](http://i.imgur.com/GcLdsCk.png)
 
 ```
 SELECT name FROM world
