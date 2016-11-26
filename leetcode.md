@@ -6,7 +6,7 @@ Leet Code Database Challenges
 [Nth Highest Salary](#nth-highest-salary)<br>
 [Rank Scores](#rank-scores)<br>
 [Consecutive Numbers](#consecutive-numbers)<br>
-[The JOIN operation](#the-join-operation)<br>
+[Employees Earning More Than Their Managers](#employees-earning-more-than-their-managers)<br>
 [Self JOIN](#self-join)<br>
 [Using NULL](#using-null)<br>
 [More JOIN operations](#more-join-operations)<br>
@@ -62,8 +62,12 @@ SELECT name, continent, population FROM world
 SELECT name FROM world
 WHERE population>200000000
 ```
-* Give the name and the per capita GDP for those countries with a population of at least 200 million.
-HELP:How to calculate per capita GDP
+
+## Employees Earning More Than Their Managers
+[Back to Table of Contents](#table-of-contents)
+
+[Employees Earning More Than Their Managers](http://i.imgur.com/aOt4kPH.png)
+
 
 ```
 SELECT name, GDP/population FROM world WHERE population > 200000000
