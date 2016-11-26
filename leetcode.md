@@ -118,7 +118,7 @@ FROM world
 [Back to Table of Contents](#table-of-contents)
 
 [Department Top Three Salaries Part 1](http://i.imgur.com/MZK0e3M.png)
-[Department Top Three Salaries](http://i.imgur.com/iDsfOnY.png)
+[Department Top Three Salaries Part 2](http://i.imgur.com/iDsfOnY.png)
 
 ```
 SELECT matchid, player FROM goal 
@@ -127,23 +127,17 @@ SELECT matchid, player FROM goal
 
 ## Delete Duplicate Emails
 [Back to Table of Contents](#table-of-contents)
-* Using tables (stops, and routes) from: http://sqlzoo.net/wiki/Self_join
-stops( id, name )
-route( num, company, pos, stop )
 
-* How many stops are in the database.
+[Delete Duplicate Emails](http://i.imgur.com/aolwsNw.png)
+
 ```
 SELECT COUNT(id) FROM stops
 ```
 
 ## Rising Temperatures
 [Back to Table of Contents](#table-of-contents)
-* Using tables (movie, actor, and casting) from: http://sqlzoo.net/wiki/More_JOIN_operations
-movie( id, title, yr, director, budget, gross )
-actor( id, name )
-casting( movieid, actorid, ord )
 
-* List the films where the yr is 1962 [Show id, title]
+[Rising Temperatures](http://i.imgur.com/uVkmiLj.png)
 
 ```
 SELECT id, title
