@@ -4,7 +4,7 @@ Leet Code Database Challenges
 [Combine Two Tables](#combine-two-tables)<br>
 [Second Highest Salary](#second-highest-salary)<br>
 [Nth Highest Salary](#nth-highest-salary)<br>
-[SELECT within SELECT Tutorial](#select-within-select-tutorial)<br>
+[Rank Scores](#rank-scores)<br>
 [SUM and COUNT](#sum-and-count)<br>
 [The JOIN operation](#the-join-operation)<br>
 [Self JOIN](#self-join)<br>
@@ -43,16 +43,20 @@ SELECT name, area FROM world
     WHERE area BETWEEN 200000 AND 250000
 ```
 
-
-* Using table (world) from: http://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial
-
-## SELECT from WORLD Tutorial
+## Rank Scores
 [Back to Table of Contents](#table-of-contents)
-* Read the notes about this table. Observe the result of running a simple SQL command.
+
+[Rank Scores](http://i.imgur.com/prWt6ZZ.png)
+
 ```
 SELECT name, continent, population FROM world
 ```
-* How to use WHERE to filter records. Show the name for the countries that have a population of at least 200 million. 200 million is 200000000, there are eight zeros.
+
+## Consecutive Numbers
+[Back to Table of Contents](#table-of-contents)
+
+[Consecutive Numbers](http://i.imgur.com/aOt4kPH.png)
+
 
 ```
 SELECT name FROM world
