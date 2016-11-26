@@ -8,10 +8,13 @@ Leet Code Database Challenges
 [Rank Scores](#rank-scores)<br>
 [Consecutive Numbers](#consecutive-numbers)<br>
 [Employees Earning More Than Their Managers](#employees-earning-more-than-their-managers)<br>
-[Self JOIN](#self-join)<br>
-[Using NULL](#using-null)<br>
-[More JOIN operations](#more-join-operations)<br>
-[Adventure Works Bonus Questions](#adventure-works-bonus-questions)<br>
+[Duplicate Emails](#duplicate-emails)<br>
+[Customers Who Never Order](#customers-who-never-order)<br>
+[Department Highest Salary](#department-highest-salary)<br>
+[Department Top Three Salaries](#department-top-three-salaries)<br>
+[Delete Duplicate Emails](#delete-duplicate-emails)<br>
+[Rising Temperature](#rising-temperature)<br>
+[Trips Users](#trips-users)<br>
 
 ## Combine Two Tables
 [Back to Table of Contents](#table-of-contents)
@@ -74,7 +77,7 @@ WHERE population>200000000
 SELECT name, GDP/population FROM world WHERE population > 200000000
 ```
 
-## SELECT from Nobel Tutorial
+## Duplicate Emails
 [Back to Table of Contents](#table-of-contents)
 * Using table (nobel) from: http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial
 
@@ -86,7 +89,7 @@ SELECT yr, subject, winner
  WHERE yr = 1950
 ```
 
-## SELECT within SELECT Tutorial
+## Customers Who Never Order
 [Back to Table of Contents](#table-of-contents)
 * Using table (world) from: http://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial
 
@@ -100,7 +103,7 @@ SELECT name FROM world
 ```
 
 
-## SUM and COUNT
+## Department Highest Salary
 [Back to Table of Contents](#table-of-contents)
 * Using table (world) from: http://sqlzoo.net/wiki/SUM_and_COUNT
 
@@ -111,7 +114,7 @@ SELECT SUM(population)
 FROM world
 ```
 
-## The JOIN operation
+## Department Top Three Salaries
 [Back to Table of Contents](#table-of-contents)
 * Using tables (game, goal, and eteam) from: http://sqlzoo.net/wiki/The_JOIN_operation
 
@@ -123,7 +126,7 @@ SELECT matchid, player FROM goal
   WHERE teamid = 'GER';
 ```
 
-## Self JOIN
+## Delete Duplicate Emails
 [Back to Table of Contents](#table-of-contents)
 * Using tables (stops, and routes) from: http://sqlzoo.net/wiki/Self_join
 stops( id, name )
@@ -134,7 +137,7 @@ route( num, company, pos, stop )
 SELECT COUNT(id) FROM stops
 ```
 
-## More JOIN operations
+## Rising Temperatures
 [Back to Table of Contents](#table-of-contents)
 * Using tables (movie, actor, and casting) from: http://sqlzoo.net/wiki/More_JOIN_operations
 movie( id, title, yr, director, budget, gross )
@@ -149,7 +152,7 @@ SELECT id, title
  WHERE yr=1962
 ```
 
-## Harder Questions
+## Trips Users
 [Back to Table of Contents](#table-of-contents)
 * Which were the busiest years for 'John Travolta', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
 ```
@@ -166,17 +169,3 @@ HAVING COUNT(title)=(SELECT MAX(c) FROM
  GROUP BY yr) AS t
 )
 ```
-
-## Adventure Works Bonus Questions
-
-[Back to Table of Contents](#table-of-contents)
-
-* Tables used at: http://sqlzoo.net/wiki/AdventureWorks
-
-* Show the first name and the email address of customer with CompanyName 'Bike World'
-
-```
-SELECT FirstName, EmailAddress
-FROM CustomerAW WHERE CompanyName = 'Bike World';
-```
-
