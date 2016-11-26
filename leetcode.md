@@ -104,9 +104,10 @@ SELECT name FROM world
 
 ## Department Highest Salary
 [Back to Table of Contents](#table-of-contents)
-* Using table (world) from: http://sqlzoo.net/wiki/SUM_and_COUNT
 
-* Show the total population of the world.
+[Department Highest Salary Part 1](http://i.imgur.com/GJvJRwx.png)
+
+[Department Highest Salary Part 2](http://i.imgur.com/8HMfgke.png)
 
 ```
 SELECT SUM(population)
