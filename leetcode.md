@@ -43,8 +43,15 @@ SELECT MAX(Salary) AS SecondHighestSalary FROM Employee
 [Nth Highest Salary](http://i.imgur.com/7Zdr9xO.png)
 
 ```
-SELECT name, area FROM world
-    WHERE area BETWEEN 200000 AND 250000
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  SET N = N-1;
+  RETURN (
+      SELECT DISTINCT Salary FROM Employee
+      ORDER BY Salary DESC
+      LIMIT 1 OFFSET N
+  );
+END
 ```
 
 ## Rank Scores
